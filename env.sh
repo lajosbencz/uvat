@@ -32,6 +32,7 @@ if test ! -d "projects/GPRS_C_SDK" ; then
   [[ ! -f "GPRS_C_SDK_V2129.zip" ]] && wget https://github.com/ZakKemble/GPRS_C_SDK/releases/download/v2.129/GPRS_C_SDK_V2129.zip
   unzip GPRS_C_SDK_V2129.zip
   mv GPRS_C_SDK/ projects/
+  chmod +x projects/GPRS_C_SDK/platform/compilation/elfCombine.pl
 fi
 if test ! -d "software/CSDTK42" ; then
   [[ ! -f "CSDTK42_Linux.tar.gz" ]] && wget https://github.com/ZakKemble/GPRS_C_SDK/releases/download/v2.129/CSDTK42_Linux.tar.gz

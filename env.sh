@@ -14,6 +14,8 @@
 #
 #
 
+WORKDIR="${WORKDIR:-~/a9g}"
+
 EXPECTED_BINARIES="7z unzip python"
 
 for ii in ${EXPECTED_BINARIES} ; do
@@ -24,7 +26,6 @@ for ii in ${EXPECTED_BINARIES} ; do
   fi
 done
 
-WORKDIR=~/a9g
 mkdir -p $WORKDIR
 cd $WORKDIR
 if test ! -d "projects/GPRS_C_SDK" ; then

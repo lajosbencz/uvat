@@ -11,13 +11,13 @@ Universal Vehicle Attitude Tracker
 WORKDIR=~/a9g
 [ ! -d "$WORKDIR" ] && mkdir -p $WORKDIR
 cd $WORKDIR
-if [! -d "projects/GPRS_C_SDK" ]; then
+if [ ! -d "projects/GPRS_C_SDK" ]; then
   mkdir projects
   [ ! -f "GPRS_C_SDK_V2129.zip" ] && wget https://github.com/ZakKemble/GPRS_C_SDK/releases/download/v2.129/GPRS_C_SDK_V2129.zip
   unzip GPRS_C_SDK_V2129.zip
   mv GPRS_C_SDK/ projects/
 fi
-if [! -d "software/CSDTK42" ]; then
+if [ ! -d "software/CSDTK42" ]; then
   [ ! -f "CSDTK42_Linux.tar.gz" ] && wget https://github.com/ZakKemble/GPRS_C_SDK/releases/download/v2.129/CSDTK42_Linux.tar.gz
   [ ! -f "CSDTK42_Update2_18_7_27.7z" ] && wget https://github.com/ZakKemble/GPRS_C_SDK/releases/download/v2.129/CSDTK42_Update2_18_7_27.7z
   tar xzf CSDTK42_Linux.tar.gz

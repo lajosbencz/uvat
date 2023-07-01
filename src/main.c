@@ -11,6 +11,8 @@
 #include "math.h"
 #include "gps.h"
 
+#include "MPU6050.h"
+
 #define MAIN_TASK_STACK_SIZE    (2048 * 2)
 #define MAIN_TASK_PRIORITY      0
 #define MAIN_TASK_NAME          "GPS Test Task"
